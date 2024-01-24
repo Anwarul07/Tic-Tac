@@ -59,6 +59,7 @@ nav {
   margin: 1rem 0 0rem 2rem;
   height: 10vw;
   width: 10vw;
+  opacity: 0;
 }
 .won{
   margin-left: 1vw;
@@ -77,4 +78,18 @@ nav {
   justify-content: center;
   align-items: center;
   cursor: pointer;
+}
+/*custom classes */
+
+.bt0{
+  border-top: 0;
+}
+.bb0{
+  border-bottom: 0;
+}
+.bl0{
+  border-left: 0;
+}
+.br0{
+  border-right: 0;
 }
