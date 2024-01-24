@@ -1,4 +1,6 @@
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans&display=swap");
 * {
+  font-family: "Work Sans", sans-serif;
   margin: 0px;
   padding: 0px;
 }
@@ -7,10 +9,72 @@ nav li {
   list-style: none;
 }
 nav {
+  width: 100vw;
   background-color: darkorchid;
   color: white;
   height: 3rem;
   display: flex;
-  align-items:center;
+  align-items: center;
   padding-left: 1rem;
+}
+
+.container {
+  color: rgba(61, 223, 166, 0.917);
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 1rem;
+  width: 100vw;
+  height: 100vh;
+}
+.grid {
+  margin-right: 1.25rem;
+  margin-left: 5vw;
+  margin-top: 2rem;
+  display: grid;
+  grid-template-columns: repeat(3, 10vw);
+  grid-template-rows: repeat(3, 10vw);
+  cursor: pointer;
+}
+.box {
+  border:2px solid black;
+  font-size: 8vw;
+  text-align: center;
+}
+.box:hover{
+  background-color: rgba(199, 213, 213, 0.521);
+}
+.info {
+  margin-left: 1.25rem;
+  margin-right: 5vw;
+  margin-top: 2rem;
+
+}
+
+.info h1{
+  font-size: 4vw;
+  margin-bottom: 0.30vh;
+
+}
+.gif {
+  margin: 1rem 0 0rem 2rem;
+  height: 10vw;
+  width: 10vw;
+}
+.won{
+  margin-left: 1vw;
+  font-size: 3vw;
+}
+#reset{
+  border-radius: 12px;
+  margin-left: 1vw;
+  margin-top: 1vw;
+  width: 9.5vw;
+  height: 3.25vw;
+  background-color: whitesmoke;
+  color:black;
+  font-size:2vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
 }
