@@ -1,6 +1,7 @@
 let over = new Audio("project folder/gameover.mp3");
 let audioTurn = new Audio("project folder/ting.mp3");
 let music = new Audio("project folder/music.mp3");
+let isgameover = false;
 
 let turn = "x";
 
@@ -11,7 +12,23 @@ const changeTurn = () => {
 
 // winning listener
 const checkWin = () => {
-
+    let boxtext = document.querySelector(".boxtext");
+    let wins = [
+        [0, 1, 2],
+        [3, 4, 5],
+        [6, 7, 8],
+        [0, 3, 6],
+        [1, 4, 7],
+        [2, 5, 8],
+        [0, 4, 8],
+        [2, 4, 6],
+    ];
+    wins.forEach(e => {
+        if ((boxtext[e[0]].innerText === boxtext[e[1]].innerText) && (boxtext[e[2]].innerText === boxtext[e[1]].innerText) && (boxtext[e[0]].innerText !== '')) {
+            document.querySelector(".won").innerText = boxtext[e[0]].innerText + "won";
+            isgameover = true;
+        }
+    })
 
 }
 
@@ -34,7 +51,7 @@ Array.from(boxes).forEach(element => {
 })
 
 
-let button=document.getElementById("reset");
-button.addEventListener("click",()=>{
-    
+let button = document.getElementById("reset");
+button.addEventListener("click", () => {
+
 })
