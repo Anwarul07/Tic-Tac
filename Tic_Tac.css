@@ -36,24 +36,22 @@ nav {
   cursor: pointer;
 }
 .box {
-  border:2px solid black;
+  border: 2px solid black;
   font-size: 8vw;
   text-align: center;
 }
-.box:hover{
+.box:hover {
   background-color: rgba(199, 213, 213, 0.521);
 }
 .info {
   margin-left: 1.25rem;
   margin-right: 5vw;
   margin-top: 2rem;
-
 }
 
-.info h1{
+.info h1 {
   font-size: 4vw;
-  margin-bottom: 0.30vh;
-
+  margin-bottom: 0.3vh;
 }
 .gif {
   margin: 1rem 0 0rem 2rem;
@@ -61,20 +59,20 @@ nav {
   width: 10vw;
   opacity: 0;
 }
-.won{
+.won {
   color: blueviolet;
   margin-left: 1vw;
   font-size: 3vw;
 }
-#reset{
+#reset {
   border-radius: 12px;
   margin-left: 1vw;
   margin-top: 1vw;
   width: 9.5vw;
   height: 3.25vw;
   background-color: green;
-  color:whitesmoke;
-  font-size:2vw;
+  color: whitesmoke;
+  font-size: 2vw;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -82,15 +80,24 @@ nav {
 }
 /*custom classes */
 
-.bt0{
+.bt0 {
   border-top: 0;
 }
-.bb0{
+.bb0 {
   border-bottom: 0;
 }
-.bl0{
+.bl0 {
   border-left: 0;
 }
-.br0{
+.br0 {
   border-right: 0;
+}
+
+/* Media quarry*/
+@media only screen and (max-width: 450px) {
+  .container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 }
