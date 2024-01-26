@@ -101,8 +101,13 @@ nav {
     align-items: center;
   }
   .info {
-    margin-bottom: 60vw;
+    margin-bottom: 30vw;
     margin-top: 25vw;
     margin-left: 8vw;
+  }
+  .grid{
+    display: grid;
+    grid-template-columns: repeat(3, 20vw);
+  grid-template-rows: repeat(3, 20vw);
   }
 }
