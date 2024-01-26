@@ -100,4 +100,9 @@ nav {
     justify-content: center;
     align-items: center;
   }
+  .info {
+    margin-bottom: 60vw;
+    margin-top: 25vw;
+    margin-left: 8vw;
+  }
 }
