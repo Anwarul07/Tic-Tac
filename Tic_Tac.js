@@ -12,7 +12,7 @@ const changeTurn = () => {
 
 // winning listener
 const checkWin = () => {
-    let boxtext = document.querySelector(".boxtext");
+    let boxtext = document.getElementsByClassName("boxtext");
     let wins = [
         [0, 1, 2],
         [3, 4, 5],
@@ -22,13 +22,15 @@ const checkWin = () => {
         [2, 5, 8],
         [0, 4, 8],
         [2, 4, 6],
-    ];
+    ]
     wins.forEach(e => {
         if ((boxtext[e[0]].innerText === boxtext[e[1]].innerText) && (boxtext[e[2]].innerText === boxtext[e[1]].innerText) && (boxtext[e[0]].innerText !== '')) {
-            document.querySelector(".won").innerText = boxtext[e[0]].innerText + "won";
+            document.querySelector(".won").innerText = boxtext[e[0]].innerText + " won";
             isgameover = true;
+            document.querySelector(".gif").style.opacity = 1
+            music.play();
+
         }
-        document.querySelector(".gif").opacity=1
 
     })
 
@@ -45,9 +47,9 @@ Array.from(boxes).forEach(element => {
             turn = changeTurn();
             audioTurn.play();
             checkWin();
-            document.getElementsByClassName("won")[0].innerText = "Turn for " + turn;
-        } else {
-
+            if (!isgameover) {
+                document.getElementsByClassName("won")[0].innerText = "Turn for " + turn;
+            }
         }
     })
 })
