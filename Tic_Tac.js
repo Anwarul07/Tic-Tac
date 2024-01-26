@@ -54,8 +54,17 @@ Array.from(boxes).forEach(element => {
     })
 })
 
+//reset button
 
 let button = document.getElementById("reset");
-button.addEventListener("click", () => {
-
+let reset = button.addEventListener("click", () => {
+    let boxtext = document.querySelectorAll(".boxtext");
+    Array.from(boxtext).forEach(e => {
+        e.innerText = ''
+    });
+    turn = 'x';
+    isgameover = false;
+    document.getElementsByClassName("won")[0].innerText = "Turn for " + turn;
+    document.querySelector(".gif").style.opacity = 0
+    music.pause();
 })
