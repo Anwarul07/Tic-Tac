@@ -99,6 +99,7 @@ nav {
   background-color: black;
   position: absolute;
   transition: width 1s ease-in-out;
+  background-color: blueviolet;
 }
 
 /* Media quarry*/
