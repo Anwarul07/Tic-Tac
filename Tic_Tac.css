@@ -93,9 +93,9 @@ nav {
 .br0 {
   border-right: 0;
 }
-.line{
-  height: 3px;
-  width:0;
+.line {
+  height: 5px;
+  width: 0;
   background-color: black;
   position: absolute;
   transition: width 1s ease-in-out;
@@ -114,9 +114,9 @@ nav {
     margin-top: 25vw;
     margin-left: 8vw;
   }
-  .grid{
+  .grid {
     display: grid;
     grid-template-columns: repeat(3, 20vw);
-  grid-template-rows: repeat(3, 20vw);
+    grid-template-rows: repeat(3, 20vw);
   }
 }

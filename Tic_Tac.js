@@ -29,8 +29,8 @@ const checkWin = () => {
             isgameover = true;
             document.querySelector(".gif").style.opacity = 1
             music.play();
-            document.querySelector(".line").style.transform = `translate(${e[3]}vw, ${e[4]}vw) rotate(${e[5]}deg)`;
-            document.querySelector(".line").style.width = "20vw";
+            // document.querySelector(".line").style.transform = `translate(${e[3]}vw, ${e[4]}vw) rotate(${e[5]}deg)`;
+            // document.querySelector(".line").style.width = "20vw";
         }
 
     })
